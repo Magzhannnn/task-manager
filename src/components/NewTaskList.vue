@@ -24,7 +24,7 @@ const clickOnTask = (id: number) => {
       <li
         v-for="(task, index) in taskStore.newTasks"
         :key="index"
-        class="flex items-center mb-2 gap-3 max-w-[500px]"
+        class="flex items-center mb-2 gap-3 max-w-[500px] cursor-pointer"
         @click="clickOnTask(task.id)"
       >
         <span class="flex-1 text-xl mt-1">{{
